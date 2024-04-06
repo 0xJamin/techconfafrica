@@ -1,0 +1,79 @@
+---
+import { Image } from "astro:assets";
+import allEvents from "../../images/all-events-in-one-place.svg";
+---
+
+<section class="py-20">
+  <div class="container mx-auto max-w-screen-xl p-5 relative">
+    <div class="grid grid-cols-4 gap-20 h-[500px]">
+      <div class="col-span-3 gap-40 flex items-center overflow-auto h-auto">
+        <div class="overflow-auto h-auto w-64 mt-10 grid grid-cols-1 gap-y-80">
+          <div>
+            <h3 class="text-xl font-bold mb-2">Detailed Listing</h3>
+            <p>
+              Our comprehensive event listings gives you an organized repository of events happing
+              in africa
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-2">Detailed Listing</h3>
+            <p>
+              Our comprehensive event listings gives you an organized repository of events happing
+              in africa
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-2">Detailed Listing</h3>
+            <p>
+              Our comprehensive event listings gives you an organized repository of events happing
+              in africa
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-2">Detailed Listing</h3>
+            <p>
+              Our comprehensive event listings gives you an organized repository of events happing
+              in africa
+            </p>
+          </div>
+          <!-- <h3 class="text-xl font-bold mb-2">Detailed Listing</h3>
+          <p>Our comprehensive event listings gives you an organized repository of events happing in africa</p>
+          <h3 class="text-xl font-bold mb-2">Detailed Listing</h3>
+          <p>Our comprehensive event listings gives you an organized repository of events happing in africa</p>
+          <h3 class="text-xl font-bold mb-2">Detailed Listing</h3>
+          <p>Our comprehensive event listings gives you an organized repository of events happing in africa</p>
+          <h3 class="text-xl font-bold mb-2">Detailed Listing</h3>
+          <p>Our comprehensive event listings gives you an organized repository of events happing in africa</p> -->
+        </div>
+        <div class="mt-[38rem]">
+          <Image src={allEvents} alt="Event Icon" />
+          <div
+            class="inline-block border-l h-28 relative left-1/2 my-5 border-dashed border-gray-300"
+          >
+          </div>
+          <Image src={allEvents} alt="Event Icon" />
+          <div
+            class="inline-block border-l h-28 relative left-1/2 my-5 border-dashed border-gray-300"
+          >
+          </div>
+          <Image src={allEvents} alt="Event Icon" />
+        </div>
+      </div>
+      <div class="sticky overflow-hidden h-[500px]">
+        <h3 class="sm:text-5xl text-4xl mb-10 font-heading sm:leading-[3.5rem] leading-[3rem]">
+          Stay Informed, <span class="text-red-gradient"> Never Miss Out</span>
+        </h3>
+        <p>
+          Never miss another tech event. <span class="text-red-gradient">Stay informed</span> with
+          detailed listings of dates, locations, speakers, and registration. Maximize every
+          opportunity.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style></style>
+
+<script></script>
+<script type="module"></script>
