@@ -5,46 +5,57 @@ import allEvents from "../../images/all-events-in-one-place.svg";
 
 <section class="py-2">
   <div class="container mx-auto max-w-screen-xl px-5 relative">
-    <div class="grid grid-cols-4 gap-10 h-[500px] relative">
-      <div class="col-span-3 gap-36 flex items-center overflow-auto h-auto scroll-section">
-        <div class="overflow-auto h-auto w-64 grid grid-cols-1 gap-y-40">
-          <div class="mt-[43rem]">
+    <div class="grid lg:grid-cols-4 grid-cols-1 gap-10 lg:h-[500px] h-auto relative">
+      <div
+        class="lg:col-span-3 lg:order-first order-last items-center overflow-auto h-auto scroll-section"
+      >
+        <div class="flex sm:gap-20 gap-2 mt-20 sm:flex-row flex-col-reverse sm:mb-0 mb-20">
+          <div class="sm:w-[40%] w-full sm:px-10 px-2 sm:text-left text-center mt-5">
             <h3 class="text-xl font-bold mb-2">Detailed Listing</h3>
             <p>
               Our comprehensive event listings gives you an organized repository of events happing
               in africa
             </p>
           </div>
-          <div class="mt-40">
+          <div class="sm:w-1/2 w-full">
+            <Image src={allEvents} alt="Event Icon" class="w-full" />
+            <div
+              class="sm:inline-block hidden border-l h-28 relative left-[40%] my-5 border-dashed border-gray-300"
+            >
+            </div>
+          </div>
+        </div>
+        <div class="flex sm:gap-20 gap-2 sm:flex-row flex-col-reverse sm:mb-0 mb-20">
+          <div class="sm:w-[40%] w-full sm:px-10 px-2 sm:text-left text-center mt-5">
             <h3 class="text-xl font-bold mb-2">Detailed event and registration details</h3>
             <p>
               Find every relevant information you need about an event, Its date, locations, speakers
               and registration details.
             </p>
           </div>
-          <div class="mt-24">
-            <h3 class="text-xl font-bold mb-2">Detailed Listing</h3>
+          <div class="sm:w-1/2 w-full">
+            <Image src={allEvents} alt="Event Icon" class="w-full" />
+            <div
+              class="sm:inline-block hidden border-l h-28 relative left-[40%] my-5 border-dashed border-gray-300"
+            >
+            </div>
+          </div>
+        </div>
+        <div class="flex sm:gap-20 gap-2 sm:flex-row flex-col-reverse sm:mb-0 mb-20">
+          <div class="sm:w-[40%] w-full sm:px-10 px-2 sm:text-left text-center mt-5">
+            <h3 class="text-xl font-bold mb-2">Mark your calendars</h3>
             <p>
-              Our comprehensive event listings gives you an organized repository of events happing
-              in africa
+              Make the most of every opportunity by adding events to your calendar for you to be
+              reminded about it.
             </p>
           </div>
-        </div>
-        <div class="mt-[40rem]">
-          <Image src={allEvents} alt="Event Icon" />
-          <div
-            class="inline-block border-l h-28 relative left-1/2 my-5 border-dashed border-gray-300"
-          >
+          <div class="sm:w-1/2 w-full">
+            <Image src={allEvents} alt="Event Icon" class="w-full" />
           </div>
-          <Image src={allEvents} alt="Event Icon" />
-          <div
-            class="inline-block border-l h-28 relative left-1/2 my-5 border-dashed border-gray-300"
-          >
-          </div>
-          <Image src={allEvents} alt="Event Icon" />
         </div>
       </div>
-      <div class="sticky overflow-hidden h-[500px] mt-10">
+
+      <div class="sticky overflow-hidden lg:h-[500px] mt-10">
         <h3 class="sm:text-5xl text-4xl mb-10 font-heading sm:leading-[3.5rem] leading-[3rem]">
           Stay Informed, <span class="text-red-gradient"> Never Miss Out</span>
         </h3>
