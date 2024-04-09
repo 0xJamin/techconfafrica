@@ -40,6 +40,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.text-red-gradient {
+  background: var(--Gradient-100, linear-gradient(90deg, #ff0f7b -28.74%, #f89b29 129.89%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 body {
   overflow-x: hidden;
 }
