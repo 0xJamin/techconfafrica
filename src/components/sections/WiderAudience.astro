@@ -1,39 +1,27 @@
 ---
-
+import { Image } from "astro:assets";
+import Button from "../elements/Button.astro";
+import audience from "../../images/audience.svg";
 ---
 
 <section class="py-10">
   <div class="container mx-auto max-w-screen-xl p-5 relative">
-    <div class="relative flex px-5 sm:flex-row flex-col gap-20 justify-around text-center">
-      <span
-        class="bg-emerald-400 text-white font-medium
-        py-1 px-2 -top-14 text-sm inline-block -rotate-[25deg] absolute"
-      >
-        Let’s brag
-      </span>
-      <div>
-        <h2
-          class="text-green-gradient sm:text-6xl text-5xl mb-3 font-heading sm:leading-[3.5rem] leading-[3rem]"
-        >
-          100
-        </h2>
-        <p class="text-xl text-gray-500">Events</p>
+    <div class="grid lg:grid-cols-6 md:grid-cols-2 grid-cols-1 items-center gap-20">
+      <div class="lg:col-span-4 md:order-first order-last">
+        <Image src={audience} alt="Audience at an Event" class="lg:w-auto w-full" />
       </div>
-      <div>
-        <h2
-          class="text-red-gradient sm:text-6xl text-5xl mb-3 font-heading sm:leading-[3.5rem] leading-[3rem]"
-        >
-          12,000
+      <div class="lg:col-span-2 md:text-left text-center md:px-3">
+        <h2 class="sm:text-5xl text-4xl mb-10 font-heading sm:leading-[3.5rem] leading-[3rem]">
+          <span class="text-green-gradient">Reach</span> a Wider Audience
         </h2>
-        <p class="text-xl text-gray-500">Interests</p>
-      </div>
-      <div>
-        <h2
-          class="text-purple-gradient sm:text-6xl text-5xl mb-3 font-heading sm:leading-[3.5rem] leading-[3rem]"
-        >
-          2,300
-        </h2>
-        <p class="text-xl text-gray-500">Reminders</p>
+        <p>
+          If you are <span class="text-emerald-500">organizing a tech event</span>, we’ve provided
+          you with a platform to showcase your event to a targeted audience. Attract the right
+          participants, and maximize the impact of your event within the African tech community.
+        </p>
+        <div class="mt-10 w-full">
+          <Button label=" Host an Event" href="/host-event" style="primary" size="lg" fullWidth />
+        </div>
       </div>
     </div>
   </div>
