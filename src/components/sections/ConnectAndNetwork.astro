@@ -1,4 +1,5 @@
 ---
+import arrowIcon from "../../images/right-arrow.svg";
 import Button from "../elements/Button.astro";
 import image from "../../images/Illustration.png";
 import { Image } from "astro:assets";
@@ -18,7 +19,15 @@ import { Image } from "astro:assets";
             accelerate your career and spark innovative ideas.
           </p>
           <div class="mt-10">
-            <Button label=" Explore Events" href="/events" style="primary" size="lg" fullWidth />
+            <Button
+              label=" Explore Events"
+              href="/events"
+              style="primary"
+              size="lg"
+              fullWidth
+              icon={arrowIcon.src}
+              iconPosition="right"
+            />
           </div>
         </div>
       </div>

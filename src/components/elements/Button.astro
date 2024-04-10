@@ -5,9 +5,11 @@ interface Props {
   style: "primary" | "secondary";
   size: "md" | "lg";
   fullWidth?: boolean;
+  icon?: string;
+  iconPosition?: "left" | "right";
 }
 
-const { href, label, style, size, fullWidth } = Astro.props;
+const { href, label, style, size, fullWidth, icon, iconPosition = "left" } = Astro.props;
 ---
 
 <a
@@ -23,5 +25,15 @@ const { href, label, style, size, fullWidth } = Astro.props;
     },
   ]}
 >
-  {label}</a
->
+  {
+    icon && iconPosition === "left" && (
+      <img src={icon} alt={`${label} icon`} class="inline-block mr-2" />
+    )
+  }
+  {label}
+  {
+    icon && iconPosition === "right" && (
+      <img src={icon} alt={`${label} icon`} class="inline-block ml-2" />
+    )
+  }
+</a>

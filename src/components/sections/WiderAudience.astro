@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import arrowIcon from "../../images/right-arrow.svg";
 import Button from "../elements/Button.astro";
 import audience from "../../images/audience.svg";
 ---
@@ -20,7 +21,15 @@ import audience from "../../images/audience.svg";
           participants, and maximize the impact of your event within the African tech community.
         </p>
         <div class="mt-10 w-full">
-          <Button label=" Host an Event" href="/host-event" style="primary" size="lg" fullWidth />
+          <Button
+            label=" Host an Event"
+            href="/host-event"
+            style="primary"
+            size="lg"
+            fullWidth
+            icon={arrowIcon.src}
+            iconPosition="right"
+          />
         </div>
       </div>
     </div>
