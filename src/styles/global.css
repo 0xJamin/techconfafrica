@@ -52,6 +52,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.text-teal-gradient {
+  background: linear-gradient(90deg, #06aed4f8 70.74%, #d0ffd6 129.89%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 body {
   overflow-x: hidden;
