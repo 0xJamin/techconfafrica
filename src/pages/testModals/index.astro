@@ -2,6 +2,7 @@
 
 ---
 
+<!-- register modal -->
 <div tabindex="-1" class="justify-center items-center m-10">
   <div class="relative p-4 h-[234px] w-[502px]">
     <div class="relative bg-white rounded-lg shadow dark:bg-white">
@@ -21,6 +22,47 @@
       </div>
         <p class="mb-4 text-base font-normal text-gray-600 text-left">
           Are you sure you want to register for this event? You'll be redirected to the organizers registration page.
+        </p>
+        <div class="w-[438px] flex justify-between">
+          <button data-modal-hide="popup-modal" type="button" class="w-full text-black border border-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 dark:border-gray-600 dark:text-black">
+            Cancel
+          </button>
+          <button data-modal-hide="popup-modal" type="button" class="w-full py-2.5 px-5 text-sm font-medium text-white focus:outline-none bg-black rounded-lg border border-gray-200 hover:bg-gray-100 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+            Proceed
+          </button>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- add to calendar modal -->
+
+<div tabindex="-1" class="justify-center items-center m-10">
+  <div class="relative p-4 h-[234px] w-[502px]">
+    <div class="relative bg-white rounded-lg shadow dark:bg-white">
+      <button type="button" class="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-200 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="popup-modal">
+        <svg class="w-3 h-3" fill="none" viewBox="0 0 14 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+        </svg>
+        <span class="sr-only">Close modal</span>
+      </button>
+      <div class="p-4 md:p-5 text-center">
+        <div class="flex items-center">
+          <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="46" height="46" rx="23" fill="#F8FAFC"/>
+            <path d="M17 25V31C17 32.1046 17.8954 33 19 33H30C31.1046 33 32 32.1046 32 31V19C32 17.8954 31.1046 17 30 17H25" stroke="#4B5565" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21 24L32 24" stroke="#4B5565" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M27 15V17" stroke="#4B5565" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17 13V21M13 17H21" stroke="#4B5565" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="font-semibold text-xl ml-4">Add event to Calendar</span>
+      </div>
+        <p class="mb-4 text-base font-normal text-gray-600 text-left">
+          Are you sure you want to perform this action?
         </p>
         <div class="w-[438px] flex justify-between">
           <button data-modal-hide="popup-modal" type="button" class="w-full text-black border border-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 dark:border-gray-600 dark:text-black">
